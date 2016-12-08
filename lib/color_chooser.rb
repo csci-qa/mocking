@@ -1,8 +1,8 @@
-require 'season_service'
+require 'weather_service'
 
-class ColorChooser
+class OutfitChooser
 
-  COLORS = {
+  OUTFITS = {
       'halloween' => 'orange',
       'turkey day' => 'brown',
       'christmas' => 'red',
@@ -16,7 +16,7 @@ class ColorChooser
     @season_service = SeasonService.new
   end
 
-  def color_for_today
-    COLORS[@season_service.which?]
+  def outfit_for_today
+    OUTFITS[@weather_service.which?]
   end
 end
