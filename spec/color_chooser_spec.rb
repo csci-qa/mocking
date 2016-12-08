@@ -1,6 +1,6 @@
 require 'color_chooser'
 
-describe 'color shooser' do
+describe 'color chooser' do
   it 'knows to pick white when it is not a season' do
     color_chooser = ColorChooser.new
     color_chooser.season_service = MockSeasonService.new
